@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WidgetsActivity">
+    tools:context=".WidgetsActivity"
+    android:orientation="vertical"
+    android:gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/bt_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botón"/>
+
+    <TextView
+        android:id="@+id/tv_TextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="Soy un Text View y soy demasiado largo y no quepo en mi caja de escritura."/>
+
+    <EditText
+        android:id="@+id/et_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Text"/>
+
+    <CheckBox
+        android:id="@+id/cb_Checkbox"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkbox"/>
+
+    <Switch
+        android:id="@+id/s_Switch"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"/>
+
+    <RadioGroup
+        android:id="@+id/rg_RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_Opt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio Button 1"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_Opt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio Button 2"/>
+
+        <RadioButton
+            android:id="@+id/rb_Opt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio Button 3"/>
+
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/sb_SeekBar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:max="10"/>
+
+    <RatingBar
+        android:id="@+id/rb_RatingBar"
+        android:stepSize="0.5"
+        android:rating="1.5"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/pb_ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"/>
+
+    <ToggleButton
+        android:id="@+id/tb_ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb_FloatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"/>
+
+</LinearLayout>
