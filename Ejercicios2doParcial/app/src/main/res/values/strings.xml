@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Ejercicios 2do Parcial</string>
     <string name="button_widgets">WIDGETS</string>
+    <string name="advanced_widgets">Advanced Widgets</string>
 </resources>

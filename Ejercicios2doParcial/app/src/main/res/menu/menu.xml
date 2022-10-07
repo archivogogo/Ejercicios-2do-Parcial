@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_Favorite"
+        android:title="Favorito"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
+        />
+
+    <item
+        android:id="@+id/item_Remove"
+        android:title="Remove"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/item_Copy"
+        android:title="Copiar"
+        android:icon="@drawable/ic_baseline_file_copy_24"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+
+</menu>

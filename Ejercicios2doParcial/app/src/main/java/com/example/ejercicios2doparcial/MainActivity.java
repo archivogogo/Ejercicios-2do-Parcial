@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button btnWidgets;
+    Button btnAdvancedWidgets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnWidgets = findViewById(R.id.button_widgets);
+        btnAdvancedWidgets = findViewById(R.id.btn_AdvancedButton);
         btnWidgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnAdvancedWidgets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AdvancedWidgetsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
+
 
     }
