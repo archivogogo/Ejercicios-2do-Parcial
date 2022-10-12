@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -26,6 +27,23 @@ public class DrawerActivity extends AppCompatActivity {
 
         navigationView = findViewById(R.id.nv_Navigation);
         drawerLayout = findViewById(R.id.dl_drawerLayout);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.item_Favorite:
+                        message("Pulsaste Favorito");
+                    break;
+                    case R.id.item_Copy:
+                        message("Pulsaste Copiar");
+                        break;
+                    case R.id.item_Remove:
+                        message("Pulsaste Eliminar");
+                        break;
+                }
+                return false;
+            }
+        });
         drawerLayout.addDrawerListener(new DrawerLayout.DrawerListener() {
             @Override
             public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
@@ -66,5 +84,8 @@ public class DrawerActivity extends AppCompatActivity {
             isOpen = !isOpen;
         }
         return super.onOptionsItemSelected(item);
+    }
+    private void message(String message){
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 }
