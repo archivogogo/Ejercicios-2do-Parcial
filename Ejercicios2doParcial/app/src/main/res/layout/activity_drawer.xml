@@ -18,7 +18,43 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/activity_drawer"/>
+            android:text="@string/activity_drawer"
+            android:visibility="invisible"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_TableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Delete"
+                android:icon="@drawable/ic_baseline_delete_24"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Copy"
+                android:icon="@drawable/ic_baseline_file_copy_24"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Favorite"
+                android:icon="@drawable/ic_baseline_favorite_24"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fcv_Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/none"
+            app:layout_constraintTop_toBottomOf="@id/tl_TableLayout"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </androidx.fragment.app.FragmentContainerView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

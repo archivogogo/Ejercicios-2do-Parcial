@@ -4,4 +4,8 @@
     <string name="advanced_widgets">Advanced Widgets</string>
     <string name="activity_drawer">Activity Drawer</string>
     <string name="name">Diego A. Medina</string>
+    <string name="Copy">Copy</string>
+    <string name="Delete">Eliminar</string>
+    <string name="Favorite">Favorito</string>
+    <string name="Home">Home</string>
 </resources>

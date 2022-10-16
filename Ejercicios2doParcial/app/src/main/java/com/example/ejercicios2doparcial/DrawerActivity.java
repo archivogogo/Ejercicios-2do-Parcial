@@ -3,6 +3,7 @@ package com.example.ejercicios2doparcial;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -69,6 +70,13 @@ public class DrawerActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void showFragmen(Fragment fragment){
+        getSupportFragmentManager().beginTransaction()
+                .setReorderingAllowed(true)
+                .replace(R.id.fcv_Fragment, fragment)
+                .commit();
     }
 
     @Override

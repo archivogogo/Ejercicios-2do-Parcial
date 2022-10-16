@@ -22,7 +22,7 @@ public class AdvancedWidgetsActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.btn_Navigation);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24);
+        //getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24);
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
