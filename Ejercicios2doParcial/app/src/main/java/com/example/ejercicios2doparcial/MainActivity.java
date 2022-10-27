@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnWidgets;
     Button btnAdvancedWidgets;
     Button btnDrawerLayout;
+    Button btnHome;
 
 
     @Override
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnWidgets = findViewById(R.id.button_widgets);
         btnAdvancedWidgets = findViewById(R.id.btn_AdvancedButton);
         btnDrawerLayout = findViewById(R.id.btn_DrawerLayout);
+        btnHome = findViewById(R.id.btn_Home);
         btnWidgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, DrawerActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

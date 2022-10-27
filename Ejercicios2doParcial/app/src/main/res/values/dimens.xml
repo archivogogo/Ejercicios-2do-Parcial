@@ -2,4 +2,5 @@
 <resources>
     <dimen name="squared">100dp</dimen>
     <dimen name="none">0dp</dimen>
+    <dimen name="header">300dp</dimen>
 </resources>
